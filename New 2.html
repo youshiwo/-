@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恋爱游戏</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .cat {
+            font-size: 24px;
+            color: #ff4500;
+            margin-bottom: 20px;
+        }
+        .message {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="cat">🐱</div>
+    <div class="message">你可以成为我的恋人吗</div>
+    <button class="button" onclick="handleYes()">可以</button>
+    <button class="button" onclick="handleNo()">不行</button>
+
+    <script>
+        function handleYes() {
+            document.querySelector('.message').innerText = '还真信啊，你配吗';
+            document.querySelector('.cat').innerText = '❤️';
+        }
+
+        function handleNo() {
+            document.querySelector('.message').innerText = '哼，我就知道你不敢';
+            document.querySelector('.cat').innerText = '😾';
+        }
+    </script>
+</body>
+</html>
